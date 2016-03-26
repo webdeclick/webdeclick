@@ -7,8 +7,7 @@ body {
 }
 
 html {
-    width: 100%;
-    height: 100%;
+
 }
 
 h1,
@@ -32,9 +31,14 @@ p {
 }
 
 li{
-
-   
+    list-style-type: none;
     text-align: left;
+float: left;
+margin: 0px 12px 0px 10px;
+}
+
+.ul{float:right;
+
 }
 
 i{
@@ -56,6 +60,7 @@ a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    text-decoration: none;
 }
 
 a:hover,
@@ -68,14 +73,45 @@ a:focus {
     font-weight: 400;
 }
 
+.lemenu{
+    width:80%;
+    margin:auto;
+}
+
+.menu{
+    position:absolute;
+}
+
+.burger{
+
+    display:none;
+}
 .navbar {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Helvetica,Arial,sans-serif;
     background-color: #000;
+    position:absolute;
 }
 
+.row1{
+width: 160px;
+float: left;
+}
+
+.row2{
+    width: 922px;
+float: right;
+}
+.accueil1{
+
+    position:absolute;
+}
+.accueil2{
+
+    position:absolute;
+}
 .navbar-brand {
     font-weight: 700;
 }
@@ -86,12 +122,18 @@ a:focus {
 
 .navbar-custom a {
     color: #fff;
+    text-decoration: none;
 }
 
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+    position: relative;
+    display: block;
+    float: left;
+    background: rgba(255,255,255,.2);
+
 }
 
 .navbar-custom .nav li a:hover,
@@ -101,19 +143,41 @@ a:focus {
     background-color: rgba(255,255,255,.2);
 }
 
-.navbar-toggle {
-    padding: 4px 6px;
-    font-size: 16px;
-    color: #fff;
-}
+
 
 .navbar-toggle:focus,
 .navbar-toggle:active {
     outline: 0;
 }
 
+.fixed {
+    position: fixed; 
+    top: 0; 
+    height: 0px; 
+    z-index: 1;
+}
+
+.col-md-12{
+    width:100%;
+}
+
+.col-md-8{
+    width:70%;
+}
+
+
+.col-md-4{
+    width:30%;
+    float: left;
+}
+.container{
+    width:1170px;
+    margin:auto;
+}
+
 @media(min-width:767px) {
     .navbar {
+        width: 1170px;
         padding: 15px 0;
         border-bottom: 0;
         letter-spacing: 1px;
@@ -131,7 +195,15 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
+    .col-lg-3{
+        width: 23%;
+        float: left;
+        margin: 10px 10px 0px 10px;
+
+    }
 }
+
+
 
 .intro {
     display: table;
@@ -289,7 +361,13 @@ a:focus {
 @media(min-width:767px) {
     .content-section {
         padding-top: 75px;
+
     }
+.row{
+width: 80%;
+margin: auto;
+height: 400px;
+}
 
     .download-section {
         padding: 100px 0;
